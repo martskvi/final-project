@@ -20,13 +20,17 @@
 
 .header.sticky {
   padding: 5px 100px;
-  background: #fff;
+  background: silver;
   -webkit-transition: 500ms ease-in;
   transition: 500ms ease-in;
 }
 
-.header.sticky .logo, .header.sticky ul li a {
+.header.sticky .logo, .header.sticky .burger-icon, .header.sticky ul li a {
   color: #000;
+}
+
+.header.sticky .logo:hover, .header.sticky .burger-icon:hover, .header.sticky ul li a:hover {
+  color: blue;
 }
 
 .header .logo {
@@ -72,6 +76,32 @@
   letter-spacing: 1px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+}
+
+.header ul li a:hover {
+  color: blue;
+}
+
+.burger-icon {
+  color: #fff;
+  font-size: 30px;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+  .burger-icon {
+    display: block;
+    -webkit-animation: 1.5s ease-in easyIn;
+            animation: 1.5s ease-in easyIn;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  .burger-icon:hover {
+    color: blue;
+  }
 }
 
 .banner {
