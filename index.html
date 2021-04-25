@@ -4,32 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6de6aa5275.js"crossorigin="anonymous"></script>
+    <link rel="icon" href="https://i.pinimg.com/originals/2e/cf/73/2ecf7364cd78b7222311518159a72179.jpg" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <a href="index.html" class="logo">Logo</a>
-        <nav class="header-nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">travel</a></li>
-                <li><a href="#">about us</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
-        </nav>
-        <div class="burger-icon">
-            <i class="fas fa-bars"></i>
+    <section class="banner">
+        <header class="header">
+            <a href="index.html" class="logo">Logo</a>
+            <nav class="header-nav">
+                <ul>
+                    <li><a class="home" href="#">Home</a></li>
+                    <li><a href="#">travel</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <div class="burger-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0 );
+            })
+        </script>
+    </section>
+    <section class="section2 center">
+        <div class="section2-big-div">
+            <h1 class="title center">LATEST TRAVEL NEWS</h1>
+            <div class="big-div-child1 row">
+                <!-- 1 -->
+                <div class="big-div-child1-3 center2">
+                    <div class="big-div-child1-3-in column">
+                        <div class="big-div-child1-3-in-img"></div>
+                        <div class="date row center">
+                            <p class="p-date">Fri Jun 18 2021</p>
+                            <div class="empty"></div>
+                            <p class="p-comment">Comments (0)</p>
+                        </div>
+                        <div class="post center">
+                            <h4>Post 1 Headline</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="big-div-child1-3 center2">
+                    <div class="big-div-child1-3-in column">
+                        <div class="big-div-child1-3-in-img img2"></div>
+                        <div class="date row center">
+                            <p class="p-date">Fri Jun 18 2021</p>
+                            <div class="empty"></div>
+                            <p class="p-comment">Comments (0)</p>
+                        </div>
+                        <div class="post center">
+                            <h4>Post 2 Headline</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="big-div-child1-3 center2">
+                    <div class="big-div-child1-3-in column">
+                        <div class="big-div-child1-3-in-img img3"></div>
+                        <div class="date row center">
+                            <p class="p-date">Fri Jun 18 2021</p>
+                            <div class="empty"></div>
+                            <p class="p-comment">Comments (0)</p>
+                        </div>
+                        <div class="post center">
+                            <h4>Post 3 Headline</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-    <section class="banner"></section>
-    <script type="text/javascript">
-        window.addEventListener("scroll", function(){
-        var header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 0 );
-        })
-    </script>
-    
+        
+
+    </section>
 </body>
 </html>

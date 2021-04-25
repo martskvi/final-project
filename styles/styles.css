@@ -47,6 +47,8 @@
 
 .header .logo:hover {
   color: blue;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 .header ul {
@@ -101,15 +103,135 @@
   }
   .burger-icon:hover {
     color: blue;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
   }
 }
 
 .banner {
   position: relative;
   width: 100%;
-  height: 200vh;
-  background-image: url(../assets/img/bg.jpg);
+  height: 100vh;
+  background-image: url(../assets/img/bg1.jpg);
   background-size: cover;
+}
+
+.section2 {
+  background-color: #d9d9d9;
+}
+
+.section2-big-div {
+  width: 1140px;
+  height: 580px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.title {
+  font-size: 79px;
+  color: #616157;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.big-div-child1 {
+  width: 1140px;
+  height: 375px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.big-div-child1-3 {
+  width: 362px;
+  height: 375px;
+  background-color: #fff;
+}
+
+.big-div-child1-3-in {
+  width: 325px;
+  height: 312px;
+}
+
+.big-div-child1-3-in-img {
+  background-image: url(../assets/img/1.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 325px;
+  height: 230px;
+}
+
+.img2 {
+  background-image: url(../assets/img/2.jpg);
+}
+
+.img3 {
+  background-image: url(../assets/img/3.jpg);
+}
+
+.date {
+  color: #b3b3b3 !important;
+}
+
+.empty {
+  height: 14px;
+  width: 1px;
+  background-color: #b3b3b3 !important;
+  margin: 0 5px;
+}
+
+.post {
+  font-size: 25px;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.center2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 @-webkit-keyframes easyIn {
