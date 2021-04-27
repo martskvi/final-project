@@ -7,31 +7,37 @@
     <link rel="icon" href="https://i.pinimg.com/originals/2e/cf/73/2ecf7364cd78b7222311518159a72179.jpg" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Document</title>
+    <title>Travel</title>
 </head>
 <body>
     <!-- section1 -->
     <section class="banner">
-        <header class="header">
-            <a href="index.html" class="logo">Logo</a>
-            <nav class="header-nav">
-                <ul>
-                    <li><a class="home" href="#">Home</a></li>
-                    <li><a href="#">travel</a></li>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-            </nav>
-            <div class="burger-icon">
-                <i class="fas fa-bars"></i>
+        <div class="banner-div">
+            <header class="header">
+                <a href="index.html" class="logo">Logo</a>
+                <nav class="header-nav">
+                    <ul>
+                        <li><a class="home" href="#">Home</a></li>
+                        <li><a href="#">travel</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>
+                <div class="burger-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </header>
+            <script type="text/javascript">
+                window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0 );
+                })
+            </script>
+            <div class="border-on-banner">
+                <h1 class="border-on-banner-h1">Mountain</h1>
+                <h3 class="border-on-banner-h3">Go where you feel most alive</h3>
             </div>
-        </header>
-        <script type="text/javascript">
-            window.addEventListener("scroll", function(){
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0 );
-            })
-        </script>
+        </div>
     </section>
     <!-- section2 -->
     <section class="section2 center">
@@ -104,10 +110,10 @@
                 <h6>ABOUT US</h6>
                 <div class="empty1"></div>
                 <div class="section3-div-p2-icon">
-                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
                 <div class="empty2"></div>
                 <p>When images become inadequate, I shall be content with silence</p>
@@ -115,6 +121,36 @@
         </div>
     </section>
     <!-- section4 -->
-    
+    <section class="section4 center">
+        <div class="section4-div-wraper">
+            <div class="section4-div-bg">
+            </div>
+            <div class="section4-div-img-wraper">
+                <div class="section4-div-img-wraper2">
+                    <div class="section4-div-img-left">
+                    </div>
+                    <div class="section4-div-img-left-p">
+                        <p>Our all inclusive tours are a life changing experience, filled with culture, cuisine, incredible photographs and unforgettable memories. We think you’ll enjoy them.
+                        </p>
+                        <div class="section4-div-icon">
+                            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section4-div-img-wraper3">
+                    <div class="section4-div-img-right-h1">
+                        <h1>PHOTO TOURS</h1>
+                    </div>
+                    <div class="section4-div-img-right">
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
 </body>
 </html>
