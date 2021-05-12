@@ -49,6 +49,8 @@
   color: blue;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .header ul {
@@ -90,35 +92,19 @@
   display: none;
 }
 
-@media (max-width: 768px) {
-  .header-nav {
-    display: none;
-  }
-  .burger-icon {
-    display: block;
-    -webkit-animation: 1.5s ease-in easyIn;
-            animation: 1.5s ease-in easyIn;
-    -webkit-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-  }
-  .burger-icon:hover {
-    color: blue;
-    -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1);
-  }
-}
-
 .banner {
   position: relative;
+  max-width: 1370px;
   width: 100%;
   height: 100vh;
   background-image: url(../assets/img/bg1.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .border-on-banner {
   position: absolute;
-  width: 350px;
+  width: 340;
   height: 150px;
   border-style: solid;
   -webkit-box-shadow: 0 0 5px 5px #3f3f39;
@@ -144,8 +130,9 @@
 }
 
 .section2-big-div {
-  width: 1140px;
-  height: 580px;
+  max-width: 1140px;
+  width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,6 +140,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .title {
@@ -163,19 +151,22 @@
 }
 
 .big-div-child1 {
-  width: 1140px;
-  height: 375px;
+  max-width: 1140px;
+  width: 100%;
+  height: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .big-div-child1-3 {
-  width: 362px;
+  max-width: 362px;
+  width: 100%;
   height: 375px;
   background-color: #fff;
   -webkit-box-shadow: 0 0 5px 5px #c4bbbb;
           box-shadow: 0 0 5px 5px #c4bbbb;
+  margin: 10px 10px;
 }
 
 .big-div-child1-3:hover {
@@ -184,7 +175,8 @@
 }
 
 .big-div-child1-3-in {
-  width: 325px;
+  max-width: 325px;
+  width: 100%;
   height: 312px;
 }
 
@@ -193,7 +185,8 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 325px;
+  max-width: 325px;
+  width: 100%;
   height: 230px;
 }
 

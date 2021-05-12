@@ -36,6 +36,7 @@
     &:hover {
         color: blue;
         transform: scale(1.1, 1.1);
+        transform: rotate(360deg);
     }
     }
 
@@ -66,6 +67,10 @@
         }
     }
 }
+// .header-nav-a:hover {
+//     transform: rotate(360deg);
+// }
+
 
 // burger icon
 .burger-icon {
@@ -73,36 +78,21 @@
     font-size: 30px;
     display: none;
     }
-@media (max-width: 768px) {
-    .header-nav {
-        display: none;
-    }
-    .burger-icon {
-        display: block;
-        animation: 1.5s ease-in easyIn;
-        transition: 0.5s ease-in-out;
-
-        &:hover {
-            color: blue;
-            transform: scale(1.1, 1.1);
-        }
-    }
-}
 .banner {
     position: relative;
+    max-width: 1370px;
     width: 100%;
     height: 100vh;
     background-image: url(../assets/img/bg1.jpg);
     background-size: cover;
+    background-position: center;
 }
 .border-on-banner {
     position: absolute;
-    width: 350px;
+    width: 340;
     height: 150px;
     border-style: solid;
     box-shadow: 0 0 5px 5px #3f3f39;
-    // border-color:#616157;
-    // border-width: 2px;
     bottom: 70px;
     left: 150px;
     padding: 10px;
@@ -122,10 +112,12 @@
     background-color: #d9d9d9;
 }
 .section2-big-div {
-    width: 1140px;
-    height: 580px;
+    max-width: 1140px;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
 }
 .title {
     font-size: 79px;
@@ -134,22 +126,29 @@
     margin-bottom: 40px;
 }
 .big-div-child1 {
-    width: 1140px;
-    height: 375px;
+    max-width: 1140px;
+    width: 100%;
+    height: auto;
     justify-content: space-between;
 }
 .big-div-child1-3 {
-    width: 362px;
+    max-width: 362px;
+    width: 100%;
     height: 375px;
     background-color: #fff;
     box-shadow: 0 0 5px 5px rgb(196, 187, 187);
+    margin: 10px 10px;
 
     &:hover {
         transform: translateY(-5px);
     }
 }
+
+
+
 .big-div-child1-3-in {
-    width: 325px;
+    max-width: 325px;
+    width: 100%;
     height: 312px;
 }
 .big-div-child1-3-in-img {
@@ -157,7 +156,8 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 325px;
+    max-width: 325px;
+    width: 100%;
     height: 230px;
 
     &:hover {
