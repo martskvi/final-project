@@ -6,7 +6,8 @@
     <meta name="description" content="Our Travel">
     <meta name="keywords" content="travel">
     <meta name="author" content="martskvi">
-    <script src="https://kit.fontawesome.com/6de6aa5275.js"crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="https://i.pinimg.com/originals/2e/cf/73/2ecf7364cd78b7222311518159a72179.jpg" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
@@ -22,21 +23,15 @@
                 <nav class="header-nav">
                     <ul>
                         <li><a class="header-nav-a" href="#">Home</a></li>
-                        <li><a class="header-nav-a" href="#">travel</a></li>
-                        <li><a class="header-nav-a" href="#">about us</a></li>
-                        <li><a class="header-nav-a" href="#">contact</a></li>
+                        <li><a class="header-nav-a" href="#travel">travel</a></li>
+                        <li><a class="header-nav-a" href="#about us">about us</a></li>
+                        <li><a class="header-nav-a" href="#contact">contact</a></li>
                     </ul>
                 </nav>
                 <div class="burger-icon">
                     <i class="fas fa-bars"></i>
                 </div>
             </header>
-            <script type="text/javascript">
-                window.addEventListener("scroll", function(){
-                var header = document.querySelector("header");
-                header.classList.toggle("sticky", window.scrollY > 0 );
-                })
-            </script>
             <div class="border-on-banner">
                 <h1 class="border-on-banner-h1">Mountain</h1>
                 <h3 class="border-on-banner-h3">Go where you feel most alive</h3>
@@ -44,52 +39,52 @@
         </div>
     </section>
     <!-- section2 -->
-    <section class="section2 center">
+    <section class="section2 center" id="travel">
         <div class="section2-big-div">
             <h1 class="title center">LATEST TRAVEL NEWS</h1>
             <div class="big-div-child1 row">
                 <!-- 1 -->
-                <div class="big-div-child1-3 center2">
-                    <div class="big-div-child1-3-in column">
-                        <div class="big-div-child1-3-in-img"></div>
-                        <div class="date row center">
-                            <p class="p-date">Fri Jun 18 2021</p>
-                            <div class="empty"></div>
-                            <p class="p-comment">Comments (0)</p>
-                        </div>
-                        <div class="post center">
-                            <h4>Post 1 Headline</h4>
-                        </div>
+                <div class="big-div-child1-3 center3">
+                    <div class="big-div-child1-3-in-img-wraper">
+                        <img class="big-div-child1-3-in-img" src="./assets/img/1.jpg"/>
+                    </div>
+                    <div class="date row center">
+                        <p class="p-date">Fri Jun 18 2021</p>
+                        <div class="empty"></div>
+                        <p class="p-comment">Comments (0)</p>
+                    </div>
+                    <div class="post center">
+                        <h4>Post 1 Headline</h4>
                     </div>
                 </div>
 
                 <!-- 2 -->
-                <div class="big-div-child1-3 center2">
-                    <div class="big-div-child1-3-in column">
-                        <div class="big-div-child1-3-in-img img2"></div>
-                        <div class="date row center">
-                            <p class="p-date">Fri Jun 18 2021</p>
-                            <div class="empty"></div>
-                            <p class="p-comment">Comments (0)</p>
-                        </div>
-                        <div class="post center">
-                            <h4>Post 2 Headline</h4>
-                        </div>
+                <div class="big-div-child1-3 center3">
+                    <div class="big-div-child1-3-in-img-wraper">
+                        <img class="big-div-child1-3-in-img" src="./assets/img/2.jpg"/>
+                    </div>
+                    <div class="date row center">
+                        <p class="p-date">Fri Jun 18 2021</p>
+                        <div class="empty"></div>
+                        <p class="p-comment">Comments (0)</p>
+                    </div>
+                    <div class="post center">
+                        <h4>Post 2 Headline</h4>
                     </div>
                 </div>
 
                 <!-- 3 -->
-                <div class="big-div-child1-3 center2">
-                    <div class="big-div-child1-3-in column">
-                        <div class="big-div-child1-3-in-img img3"></div>
-                        <div class="date row center">
-                            <p class="p-date">Fri Jun 18 2021</p>
-                            <div class="empty"></div>
-                            <p class="p-comment">Comments (0)</p>
-                        </div>
-                        <div class="post center">
-                            <h4>Post 3 Headline</h4>
-                        </div>
+                <div class="big-div-child1-3 center3">
+                    <div class="big-div-child1-3-in-img-wraper">
+                        <img class="big-div-child1-3-in-img" src="./assets/img/3.jpg"/>
+                    </div>
+                    <div class="date row center">
+                        <p class="p-date">Fri Jun 18 2021</p>
+                        <div class="empty"></div>
+                        <p class="p-comment">Comments (0)</p>
+                    </div>
+                    <div class="post center">
+                        <h4>Post 3 Headline</h4>
                     </div>
                 </div>
             </div>
@@ -181,8 +176,7 @@
             </div>
             <div class="section6-div-child2">
             </div>
-            <div class="section6-div-child3-img">
-            </div>
+            <img class="section6-div-child3-img" src="./assets/img/12.jpg" alt="img12"/>
             <div class="section6-div-child4-pdiv center">
                 <h1 class="section6-div-child4-pdiv-h1">Master Photo Tour</h1>
                 <p class="section6-div-child4-pdiv-p">Walk with a Photo Master. Explore the world with our master photographers and learn to look at things with a photographic eye. Check out our themes to find out any aspect of the art of photography. Choose your favourite one among our proposals to improve your skills and start exploring the world with us. You will find the perfect tour to let your passion grow!</p>
@@ -192,7 +186,7 @@
         </div>
     </section>
     <!-- section7 -->
-    <section class="section7">
+    <section class="section7" id="about us">
         <div class="section7-div-wraper row">
             <div class="section7-div-img-left">
             </div>
@@ -217,8 +211,10 @@
 
     </section>
     <!-- section8 -->
-    <section class="section8">
+    <section class="section8" id="contact">
 
     </section>
+    <script src="./assets/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/6de6aa5275.js"crossorigin="anonymous"></script>
 </body>
 </html>

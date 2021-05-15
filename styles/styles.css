@@ -1,8 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
-  max-width: 1800px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,6 +98,7 @@
   color: #fff;
   font-size: 30px;
   display: none;
+  cursor: pointer;
 }
 
 .banner {
@@ -168,11 +176,12 @@
   -webkit-box-shadow: 0 0 5px 5px #c4bbbb;
           box-shadow: 0 0 5px 5px #c4bbbb;
   margin: 10px 10px;
+  overflow: hidden;
 }
 
-.big-div-child1-3:hover {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+.big-div-child1-3:hover .big-div-child1-3-in-img {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
 }
 
 .big-div-child1-3-in {
@@ -181,37 +190,18 @@
   height: 312px;
 }
 
-.big-div-child1-3-in-img {
-  background-image: url(../assets/img/1.jpg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+.big-div-child1-3-in-img-wraper {
   max-width: 325px;
   width: 100%;
   height: 230px;
+  overflow: hidden;
 }
 
-.big-div-child1-3-in-img:hover {
-  -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
-}
-
-.img2 {
-  background-image: url(../assets/img/2.jpg);
-}
-
-.img2:hover {
-  -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
-}
-
-.img3 {
-  background-image: url(../assets/img/3.jpg);
-}
-
-.img3:hover {
-  -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
+.big-div-child1-3-in-img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .date {
@@ -253,6 +243,8 @@
   position: absolute;
   top: 50px;
   left: 50px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .section3-div-img1:hover {
@@ -273,6 +265,8 @@
   margin-top: 20px;
   font-size: 16px;
   opacity: 0.5;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .section3-div-p1 p:hover {
@@ -288,6 +282,8 @@
   display: flex;
   vertical-align: top;
   opacity: 0.5;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .section3-div-p1 h4:hover {
@@ -303,6 +299,8 @@
   height: 180px;
   background-repeat: no-repeat;
   position: absolute;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .section3-div-img2:hover {
@@ -319,6 +317,8 @@
   height: 110px;
   background-repeat: no-repeat;
   position: absolute;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .section3-div-img3:hover {
@@ -335,6 +335,8 @@
   height: 170px;
   background-repeat: no-repeat;
   position: absolute;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .section3-div-img4:hover {
@@ -520,6 +522,8 @@
   position: relative;
   margin-right: 40px;
   opacity: 0.7;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .section5-div-wraper-child1:hover {
@@ -560,6 +564,8 @@
   width: 535px;
   height: 800px;
   opacity: 0.7;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .section5-div-wraper-child2:hover {
@@ -597,19 +603,21 @@
 }
 
 .section6-div-child3-img {
-  background-image: url(../assets/img/12.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
   max-width: 680px;
   width: 100%;
   height: 415px;
   position: absolute;
   margin-bottom: 350px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .section6-div-child3-img:hover {
-  background-size: contain;
+  width: 300px;
 }
 
 .section6-div-child4-pdiv {
@@ -791,6 +799,24 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.center3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 @-webkit-keyframes easyIn {
