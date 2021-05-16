@@ -24,9 +24,9 @@ body {
         .logo, .burger-icon, ul li a {
             color: #000;
 
-        &:hover {
-            color: blue;
-        }
+            &:hover {
+                color: blue;
+            }
         }
     }
 
@@ -39,11 +39,11 @@ body {
         animation: 1.5s ease-in easyIn;
         transition: 0.5s ease-in-out;
 
-    &:hover {
-        color: blue;
-        transform: scale(1.1, 1.1);
-        transform: rotate(360deg);
-    }
+        &:hover {
+            color: blue;
+            transform: scale(1.1, 1.1);
+            transform: rotate(360deg);
+        }
     }
 
     ul {
@@ -64,9 +64,9 @@ body {
                 letter-spacing: 1px;
                 transition: 0.6s;
 
-            &:hover {
-                color: blue;
-            }
+                    &:hover {
+                        color: blue;
+                    }
             }
         }
     }
@@ -82,12 +82,12 @@ body {
     }
 .banner {
     position: relative;
-    max-width: 1370px;
     width: 100%;
     height: 100vh;
     background-image: url(../assets/img/bg1.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 .border-on-banner {
     position: absolute;
@@ -140,13 +140,7 @@ body {
     background-color: #fff;
     box-shadow: 0 0 5px 5px rgb(196, 187, 187);
     margin: 10px 10px;
-    overflow: hidden;
-
-    &:hover { 
-        .big-div-child1-3-in-img {
-            transform: scale(1.2, 1.2);
-        }
-    }
+    overflow: hidden; 
 }
 .big-div-child1-3-in {
     max-width: 325px;
@@ -158,6 +152,12 @@ body {
     width: 100%;
     height: 230px;
     overflow: hidden;
+
+    &:hover { 
+        .big-div-child1-3-in-img {
+            transform: scale(1.2, 1.2);
+        }
+    }
 }
 .big-div-child1-3-in-img {
     width: 100%;
@@ -191,12 +191,8 @@ body {
     position: relative;
 }
 .section3-div-img1 {
-    background-image: url(../assets/img/4.jpg);
-    background-size: contain;
     width: 200px;
     height: 300px;
-    background-repeat: no-repeat;
-    background-position: center;
     position: absolute;
     top: 50px;
     left: 50px;
@@ -214,7 +210,7 @@ body {
     left: 270px;
 }
 .section3-div-p1 p {
-    width: 225px;
+    width: 250px;
     color: #fff;
     margin-top: 20px;
     font-size: 16px;
@@ -239,13 +235,10 @@ body {
     }
 }
 .section3-div-img2 {
-    background-image: url(../assets/img/5.jpg);
     top: 240px;
     left: 215px;
-    background-size: contain;
     width: 270px;
     height: 180px;
-    background-repeat: no-repeat;
     position: absolute;
     transition: 0.6s;
 
@@ -255,13 +248,10 @@ body {
     }
 }
 .section3-div-img3 {
-    background-image: url(../assets/img/6.jpg);
     top: 400px;
     left: 0;
-    background-size: contain;
     width: 190px;
     height: 110px;
-    background-repeat: no-repeat;
     position: absolute;
     transition: 0.6s;
 
@@ -271,13 +261,10 @@ body {
     }
 }
 .section3-div-img4 {
-    background-image: url(../assets/img/7.jpg);
     top: 450px;
     left: 215px;
-    background-size: contain;
     width: 130px;
     height: 170px;
-    background-repeat: no-repeat;
     position: absolute;
     transition: 0.6s;
 
@@ -354,19 +341,12 @@ body {
     width: 100%;
     height: 600px;
     position: absolute;
-    // top: 50px;
-    // left: 150px;
-    // margin: 0 auto;
     left: 20%; top: 40%; transform: translate(-50%, -50%);
 }
 .section4-div-img-left {
-    background-image: url(../assets/img/8.jpg);
     max-width: 380px;
     width: 100%;
     height: 570px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     position: absolute;
     left: 50%; top: 50%; transform: translate(-50%, -50%);
 }
@@ -404,13 +384,9 @@ body {
     margin-bottom: 20px;
 }
 .section4-div-img-right {
-    background-image: url(../assets/img/9.jpg);
     max-width: 380px;
     width: 100%;
     height: 570px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     margin: 0 auto;
 }
 
@@ -427,10 +403,6 @@ body {
     height: 800px;
 }
 .section5-div-wraper-child1 {
-    background-image: url(../assets/img/10.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     width: 488px;
     height: 650px;
     position: relative;
@@ -563,7 +535,7 @@ body {
     height: 550px;
 }
 .section7-div-wraper {
-    max-width: 1800px;
+    max-width: 1769px;
     width: 100%;
     height: 550px;
     background-color: #000;
@@ -631,9 +603,48 @@ body {
     height: 145px;
     background-color: #bfa065;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+
+
+
+// section8
+.section8 {
+    width: 100%;
+    background-color: #000;
+}
+.section8-map {
+   margin: 50px auto;
+   border-radius: 15px;
+   box-shadow: 0 0 8px 8px #616157;
+   opacity: 0.4;
+   transition: 0.6s;
+   max-width: 700px;
+   width: 100%;
+
+   &:hover {
+       opacity: 0.7;
+   }
+}
+.section8-contact-navigation-ul-li-div {
+    width: 230px;
+    height: 50px;
+    border-style: solid;
+    border-color: #616157;
+    border-width: 2px 0 0 0;
+    margin: 5px;
+    outline: none;
+}
+span {
+    color: #616157;
+}
+.section8-contact-navigation-ul {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section8-contact-navigation-a {
+    color: #616157;
 }
 
 
@@ -659,6 +670,11 @@ body {
     display: flex;
     flex-direction: row;
 }
+.row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .center3 {
     display: flex;
     justify-content: center;
@@ -666,6 +682,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
 }
+
 
 
 // header animations
