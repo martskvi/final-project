@@ -24,11 +24,11 @@
                     <ul>
                         <li><a class="header-nav-a" href="#">Home</a></li>
                         <li><a class="header-nav-a" href="#travel">travel</a></li>
-                        <li><a class="header-nav-a" href="#about us">about us</a></li>
+                        <li><a class="header-nav-a" href="#about-us">about us</a></li>
                         <li><a class="header-nav-a" href="#contact">contact</a></li>
                     </ul>
                 </nav>
-                <div class="burger-icon">
+                <div class="burger-icon" onclick="menuOpen()">
                     <i class="fas fa-bars"></i>
                 </div>
             </header>
@@ -181,7 +181,7 @@
         </div>
     </section>
     <!-- section7 -->
-    <section class="section7 center" id="about us">
+    <section class="section7 center" id="about-us">
         <div class="section7-div-wraper row">
             <div class="section7-div-img-left">
             </div>
@@ -239,6 +239,27 @@
         </div>
     </section>
 
+    <section class="menu">
+        <aside class="menu__sidebar">
+            <div class="menu__close" onclick="menuClose()">
+                <i class="fas fa-times"></i>
+            </div>
+            <ul class="menu__list">
+                <div class="menu__list-div center2">
+                    <li class="menu__list-item"><a class="menu__list-item-a" href="#" onclick="menuClose()">Home</a></li>
+                </div>
+                <div class="menu__list-div center2">
+                    <li class="menu__list-item"><a class="menu__list-item-a" href="#travel" onclick="menuClose()">Travel</a></li>
+                </div>
+                <div class="menu__list-div center2">
+                    <li class="menu__list-item"><a class="menu__list-item-a" href="#about-us" onclick="menuClose()">About Us</a></li>
+                </div>
+                <div class="menu__list-div center2">
+                    <li class="menu__list-item"><a class="menu__list-item-a" href="#contact" onclick="menuClose()">Contact</a></li>
+                </div>
+            </ul>
+        </aside>
+    </section>
 
     <script src="./assets/js/index.js"></script>
     <script src="https://kit.fontawesome.com/6de6aa5275.js"crossorigin="anonymous"></script>

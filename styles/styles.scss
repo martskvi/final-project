@@ -4,6 +4,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
 }
+
 .header {
     position: fixed;
     top: 0;
@@ -80,6 +81,71 @@ body {
     display: none;
     cursor: pointer;
     }
+
+
+// menu
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    &.visible {
+        display: flex;
+    }
+
+    &__close {
+        height: 28px;
+        margin: 20px 20px 20px auto;
+        cursor: pointer;
+        transition: 0.6s;
+
+        .fas {
+            font-size: 28px;
+            color: #ffffff;
+
+            &:hover {
+                color: rgb(255, 38, 0);
+            }
+        }
+    }
+
+    &__sidebar {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        height: 100%;
+        background-color: #000000;
+    }
+
+    &__list {
+        width: 100%;
+    }
+
+    &__list-div {
+        width: 230px;
+        height: 50px;
+        border-style: solid;
+        border-color: #616157;
+        border-width: 2px 0 0 0;
+        margin: 5px;
+    }
+}
+.menu__list-item-a {
+    color: #616157;
+    transition: 0.6s;
+
+    &:hover {
+        color: blue;
+    }
+}
+
+
+// section1
 .banner {
     position: relative;
     width: 100%;
@@ -152,6 +218,7 @@ body {
     width: 100%;
     height: 230px;
     overflow: hidden;
+    box-shadow: 0 0 5px 5px rgb(196, 187, 187);
 
     &:hover { 
         .big-div-child1-3-in-img {
@@ -198,7 +265,6 @@ body {
     left: 50px;
     transition: 0.6s;
 
-
     &:hover {
         transform: scale(1.2, 1.2);
         z-index: 1;
@@ -242,9 +308,9 @@ body {
     position: absolute;
     transition: 0.6s;
 
-
     &:hover {
         transform: scale(1.2, 1.2);
+        z-index: 1;
     }
 }
 .section3-div-img3 {
@@ -255,9 +321,9 @@ body {
     position: absolute;
     transition: 0.6s;
 
-
     &:hover {
         transform: scale(1.2, 1.2);
+        z-index: 1;
     }
 }
 .section3-div-img4 {
@@ -268,9 +334,9 @@ body {
     position: absolute;
     transition: 0.6s;
 
-
     &:hover {
         transform: scale(1.2, 1.2);
+        z-index: 1;
     }
 }
 .section3-div-p2 {
@@ -349,6 +415,7 @@ body {
     height: 570px;
     position: absolute;
     left: 50%; top: 50%; transform: translate(-50%, -50%);
+    box-shadow: 0 0 5px 5px #a68053;
 }
 .section4-div-img-left-p {
     position: absolute;
@@ -382,12 +449,18 @@ body {
     color: #a2a6a1;
     padding-top: 20px;
     margin-bottom: 20px;
+    transition: 0.6s;
+
+    &:hover {
+        color: #a68053;
+    }
 }
 .section4-div-img-right {
     max-width: 380px;
     width: 100%;
     height: 570px;
     margin: 0 auto;
+    box-shadow: 0 0 5px 5px #a68053;
 }
 
 
@@ -486,7 +559,8 @@ body {
     height: 415px;
     position: absolute;
     margin-bottom: 350px;
-    transition: 0.6s;
+    transition: 0.6s ease-in-out;
+    box-shadow: 0 0 5px 5px #a68053;
 
     &:hover {
         width: 300px;
@@ -617,10 +691,11 @@ body {
    margin: 50px auto;
    border-radius: 15px;
    box-shadow: 0 0 8px 8px #616157;
-   opacity: 0.4;
    transition: 0.6s;
    max-width: 700px;
    width: 100%;
+   outline: none;
+   opacity: 0.3;
 
    &:hover {
        opacity: 0.7;
@@ -633,7 +708,6 @@ body {
     border-color: #616157;
     border-width: 2px 0 0 0;
     margin: 5px;
-    outline: none;
 }
 span {
     color: #616157;
